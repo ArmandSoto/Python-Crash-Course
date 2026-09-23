@@ -63,9 +63,91 @@ def f_7():
         for k, v in album.items():
             print(f"{k}: {v}")
 
+def f_8():
+
+    while True:
+        artist = input("Enter artist name: ")
+        if artist == 'q':
+            break
+        title = input("Enter title: ")
+        if title == 'q':
+            break
+
+        album = make_album(artist, title)
+        print(album)
+
+def show_messages(messages):
+    for msg in messages:
+        print(msg)
+
+def f_9():
+    messages = ['Hi', 'how are you', 'ttyl']
+    show_messages(messages)
+
+def send_messages(messages, sent_messages):
+    while messages:
+        current_message = messages.pop()
+        print(f'Sending Message {current_message}')
+        sent_messages.append(current_message)
+
+def f_10():
+    messages = ['Hi', 'how are you', 'ttyl']
+    sent_messages = []
+    # [:] means copy via slice shorthand
+    send_messages(messages,sent_messages)
+
+    print('------------ Messages --------------------')
+    show_messages(messages)
+    print('------------ Sent Messages --------------------')
+    show_messages(sent_messages)
+
+def f_11():
+    messages = ['Hi', 'how are you', 'ttyl']
+    sent_messages = []
+    # [:] means copy via slice shorthand
+    send_messages(messages[:],sent_messages)
+
+    print('------------ Messages --------------------')
+    show_messages(messages)
+    print('------------ Sent Messages --------------------')
+    show_messages(sent_messages)
+
+def print_sandwich_order(*items):
+    # *items tells python to make a tuple
+    for item in items:
+        print(item)
+    print('-----------------')
+
+def f_12():
+    print_sandwich_order('ham', 'cheese')
+    print_sandwich_order('bacon', 'egg', 'lettuce')
+    print_sandwich_order('turkey', 'tomato', 'lettuce', 'cheese')
+
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+
+def f_13():
+    user_profile = build_profile('armand','soto', location='new york', field='compsci', eye_color='brown')
+
+    print(user_profile)
+
+
+def make_car(manufacturer, model, **car_info):
+    car_info['manufacturer'] = manufacturer
+    car_info['model'] = model
+
+    return car_info
+
+def f_14():
+    car = make_car('subaru','outback', color='blue', tow_package=True)
+    print(car)
 
 def main():
-    f_7()
+    f_14()
 
 if __name__ == "__main__":
     main()    
