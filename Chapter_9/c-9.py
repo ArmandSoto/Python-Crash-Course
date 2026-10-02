@@ -258,6 +258,7 @@ def f_15():
                 break
             else:
                 is_winner = True
+                # to show that the ticket is the same as the wining ticket
                 if i == 3:
                     print(my_ticket)
 
