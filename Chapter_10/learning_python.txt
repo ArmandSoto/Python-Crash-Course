@@ -1,0 +1,3 @@
+In Python you can iterate through a list of items
+In Python you can save information you can to use later in a variable
+In Python you can create key-value pairs that you can store in a data structure called a dictionary

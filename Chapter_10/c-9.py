@@ -225,7 +225,10 @@ def f_14():
 
 
 def f_15():
+
+    # choices to choose from
     lottery = (16, 24, 98, 11, 54, 2, 63, 49, 22, 37, "A", "Z", "G", "B", "J")
+
     winning_ticket = []
 
     for _ in range(4):
