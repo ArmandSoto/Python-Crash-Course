@@ -1,16 +1,42 @@
+def f_1():
+    pizza_types = ["Plain", "Pepperoni", "Sausage"]
+    for pizza in pizza_types:
+        print(f"I love {pizza}")
 
-#4-3
+    print(
+        f" {pizza_types[0]} is awesome\n {pizza_types[1]} is sooo good\n"
+        f"A lot of people don't like {pizza_types[2]}\n"
+        f"I really love pizza"
+    )
+
+
+def f_2():
+    print("hello from 4-2!!!!")
+
+    # common characteristic - nose
+
+    animals = ["bird", "cat", "dog"]
+
+    for animal in animals:
+        print(f"A {animal} would make a great pet")
+
+    print("All these animals have a nose, they would all make a great pet")
+
+
+# 4-3
 def f_3():
     for i in range(1, 21):
         print(i)
 
-#4-4
-def f_4(): 
+
+# 4-4
+def f_4():
     one_mil = list(range(1, 1_000_001))
     for i in one_mil:
         print(i)
 
-#4-5
+
+# 4-5
 def f_5():
     one_mil = list(range(1, 1_000_001))
 
@@ -20,19 +46,23 @@ def f_5():
 
     print(f"Min is: {minimum}, Max is: {maximum}, Sum is: {summation}")
 
-#4-6
+
+# 4-6
 def f_6():
     odd_numbers = list(range(1, 21, 2))
 
     for num in odd_numbers:
         print(num)
 
-#4-7
+
+# 4-7
 def f_7():
     multiples_of_3 = list(range(3, 33, 3))
 
     for num in multiples_of_3:
         print(num)
+
+
 # 4-8
 def f_8():
     cubes = []
@@ -42,37 +72,40 @@ def f_8():
     for cube in cubes:
         print(cube)
 
-#4-9
+
+# 4-9
 def f_9():
     multiples_of_3 = list(range(3, 33, 3))
 
     for num in multiples_of_3:
         print(num)
-        
-#4-10        
+
+
+# 4-10
 def f_10():
 
-    #first
+    # first
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     print("The first three items in this list are: numbers")
     print(numbers[:3])
 
-    # middle 
+    # middle
     print("Three items from the middle are: ")
 
     print(numbers[3:6])
 
-    #end
+    # end
     print("The last three items in the list are:")
     print(numbers[-3:])
 
-#4-11
+
+# 4-11
 def f_11():
-    pizzas = ['plain', 'pepporoni', 'bacon']
+    pizzas = ["plain", "pepporoni", "bacon"]
     friend_pizzas = pizzas[:]
 
-    pizzas.append('sausage')
-    friend_pizzas.append('hawaiian')
+    pizzas.append("sausage")
+    friend_pizzas.append("hawaiian")
 
     print("My favorite pizzas are: ")
     for p in pizzas:
@@ -82,13 +115,14 @@ def f_11():
     for p in friend_pizzas:
         print(p)
 
-#4-12:
+
+# 4-12:
 def f_12():
-    my_foods = ['pizza', 'falafel', 'carrot cake']
+    my_foods = ["pizza", "falafel", "carrot cake"]
     friend_foods = my_foods[:]
-    
-    my_foods.append('cannoli')
-    friend_foods.append('ice cream')
+
+    my_foods.append("cannoli")
+    friend_foods.append("ice cream")
 
     print("My favorite favorite foods are: ")
     for f in my_foods:
@@ -98,23 +132,27 @@ def f_12():
     for f in friend_foods:
         print(f)
 
+
 def f_13():
-        
-    foods = ('pizza', 'pasta', 'pancakes', 'blt', 'burger') 
-    for food in foods: 
-        print(food)
-    
-    print('-------')
-    # foods[1] = 'cupcake' #change is rejected
-    foods = ('pizza', 'cupcake', 'steak', 'blt', 'burger')
+
+    foods = ("pizza", "pasta", "pancakes", "blt", "burger")
     for food in foods:
         print(food)
 
-#4_14 is the pep style guide
-#4_15 Code Review
+    print("-------")
+    # foods[1] = 'cupcake' #change is rejected
+    foods = ("pizza", "cupcake", "steak", "blt", "burger")
+    for food in foods:
+        print(food)
+
+
+# 4_14 is the pep style guide
+# 4_15 Code Review
+
 
 def main():
     f_13()
+
 
 if __name__ == "__main__":
     main()
